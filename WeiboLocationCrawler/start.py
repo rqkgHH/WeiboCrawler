@@ -1,6 +1,6 @@
 # coding:utf-8
 # version:python3.7
-# author:Ivy
+# author:xzh
 
 import crawler
 import buildip
@@ -11,13 +11,13 @@ import sqlite3
 
 if __name__ == '__main__':
     ########################### 自己设置区 ###############################
-    emailname=None
-    emailpassword=None
+    emailname='1414218738@qq.com'
+    emailpassword='Xzh65085417'
     #####################################################################
 
     # 登录你的邮箱
     yag = yagmail.SMTP(user = emailname, password = emailpassword, host = 'smtp.qq.com')
-
+    # yag = yagmail.SMTP(user='11111@qq.com',password='authorization code',host='smtp.qq.com')
     # 位置个数
     temp_pd = pandas.read_csv("pid.csv")
     n=temp_pd.shape[0]
